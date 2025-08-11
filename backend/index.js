@@ -97,7 +97,6 @@ dotenv.config()
 const app = express()
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-
 // Middleware
 const corsOptions = {
   origin:"https://pakfiler-frontlastest.vercel.app",
@@ -106,8 +105,10 @@ const corsOptions = {
 }
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
+
 app.use(express.json({ limit: "50mb" })) // Increased limit for bulk operations
 app.use(express.urlencoded({ extended: true, limit: "50mb" }))
+
 
 // Database
 connectDB()
