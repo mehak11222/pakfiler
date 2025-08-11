@@ -57,7 +57,7 @@ export default function LoginPage() {
 
   const onSubmit = async (data: LoginFormValues) => {
     try {
-      const response = await fetch("https://pakfiler-mvae.vercel.app/api/auth/login", {
+      const response = await fetch("https://pakfiler-backend.vercel.app/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

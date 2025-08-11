@@ -55,7 +55,7 @@ async function registerUser(data: {
   role: string
 }): Promise<{ success: boolean; message?: string }> {
   try {
-    const response = await axios.post("https://pakfiler-mvae.vercel.app/api/auth/register", {
+    const response = await axios.post("https://pakfiler-backend.vercel.app/api/auth/register", {
       email: data.email,
       fullName: data.fullName,
       phone: data.phoneNumber,
