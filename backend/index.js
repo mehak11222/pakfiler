@@ -100,7 +100,7 @@ const __dirname = path.dirname(__filename)
 
 // Middleware
 const corsOptions = {
-  origin:true,
+  origin:"https://pakfiler-frontlastest.vercel.app",
   credentials: true,
   optionsSuccessStatus: 200
 }
