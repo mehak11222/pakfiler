@@ -39,3 +39,5 @@ out/
 # Uploads
 backend/src/uploads/*
 !backend/src/uploads/.gitkeep
+
+.vercel
